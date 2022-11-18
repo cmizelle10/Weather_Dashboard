@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="hero">
+      <h1 class="app-title">Weather Dashboard</h1>
+    </header>
+
+    <div class="flex-container-og">
+      <div class="flex-container" id="search-card">
+        <div class="search-form">
+        <form id="search-form">
+          <label class="form-label" for="search-city">Search for a City:</label>
+          <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+        </div>
+        <div class="search-history" id="search-history-container"></div>
+      </div>
+
+      <div class="flex-container2">
+        <div class="current-city" id="current-city-container">
+          <h2 class="current-city"> <span id="current-city"></span></h2>
+        </div>  
+        <div class="forecast-text"><h2>5 Day Forecast</h2></div>
+        <div class="forecast" id="forecast-container"></div>
+      </div>
+      
+
+    </div>
+
+      
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
-</html>
+</html> 
+
