@@ -27,7 +27,7 @@ var formSubmitHandler = function (event) {
   }; 
 
 var getWeather = function(city) { // Pass city as only argument to function
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey; // URL needs dynamic city and api key
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey; // URL needs dynamic city and api key
     fetch(queryURL)
     .then(function (response) {
         if (response.ok) {
